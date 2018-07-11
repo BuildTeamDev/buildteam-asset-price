@@ -1,0 +1,35 @@
+{
+  "name": "buildteam-asset-price",
+  "version": "1.0.0",
+  "description": "Fetches BUILDTEAM price from bitshares via CryptoFresh",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel -d dist src/",
+    "test": "jest",
+    "dev": "npm run build && node ./dist/index.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "bts",
+    "blockchain",
+    "bitshares",
+    "buildteam",
+    "token",
+    "asset",
+    "price"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BuildTeamDev/buildteam-asset-price"
+  },
+  "author": "Paulius Uza <pauliusuza@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0"
+  }
+}
